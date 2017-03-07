@@ -1,0 +1,10 @@
+alpha Dedicated- DEVELOPMENT/Intermediate/
+alpha Dedicated- DEVELOPMENT/Saved/
+alpha Dedicated- DEVELOPMENT/Content/StarterContent/
+alpha Dedicated- DEVELOPMENT/Binaries/
+alpha Dedicated- DEVELOPMENT/Plugins/VaRest/
+*.db
+*.suo
+alpha Dedicated- DEVELOPMENT/Build/WindowsNoEditor/FileOpenOrder/CookerOpenOrder.log
+alpha Dedicated- DEVELOPMENT/Build/
+alpha Dedicated- DEVELOPMENT/DerivedDataCache/Boot.ddc

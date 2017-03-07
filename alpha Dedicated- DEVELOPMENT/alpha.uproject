@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{606BFBD7-4D10-A748-4208-D8920551A12C}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "alpha",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}
