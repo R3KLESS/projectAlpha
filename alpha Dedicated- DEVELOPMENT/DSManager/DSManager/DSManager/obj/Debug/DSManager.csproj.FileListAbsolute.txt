@@ -1,0 +1,9 @@
+C:\Users\Pally\Desktop\DSManager\DSManager\bin\Debug\DSManager.exe.config
+C:\Users\Pally\Desktop\DSManager\DSManager\bin\Debug\DSManager.exe
+C:\Users\Pally\Desktop\DSManager\DSManager\bin\Debug\DSManager.pdb
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.csprojResolveAssemblyReference.cache
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.DSManager.resources
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.Properties.Resources.resources
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.csproj.GenerateResource.Cache
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.exe
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.pdb

@@ -1,0 +1,21 @@
+C:\Users\Pally\Desktop\DSManager\DSManager\bin\Release\DSManager.exe.config
+C:\Users\Pally\Desktop\DSManager\DSManager\bin\Release\DSManager.exe
+C:\Users\Pally\Desktop\DSManager\DSManager\bin\Release\DSManager.pdb
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Release\DSManager.DSManager.resources
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Release\DSManager.Properties.Resources.resources
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Release\DSManager.csproj.GenerateResource.Cache
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Release\DSManager.exe
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Release\DSManager.pdb
+C:\Users\Pally\Desktop\DSManager\DSManager\obj\Release\DSManager.csprojResolveAssemblyReference.cache
+C:\Users\Tony\Downloads\DSManager\DSManager\DSManager\bin\Release\DSManager.exe.config
+C:\Users\Tony\Downloads\DSManager\DSManager\DSManager\obj\Release\DSManager.exe
+C:\Users\Tony\Downloads\DSManager\DSManager\DSManager\obj\Release\DSManager.pdb
+E:\Visual Studio projects\DSManager\DSManager\DSManager\bin\Release\DSManager.exe.config
+E:\Visual Studio projects\DSManager\DSManager\DSManager\obj\Release\DSManager.exe
+E:\Visual Studio projects\DSManager\DSManager\DSManager\obj\Release\DSManager.pdb
+E:\Visual Studio projects\DSManager\DSManager\DSManager\bin\Release\DSManager.exe
+E:\Visual Studio projects\DSManager\DSManager\DSManager\bin\Release\DSManager.pdb
+E:\Visual Studio projects\DSManager\DSManager\DSManager\obj\Release\DSManager.csprojResolveAssemblyReference.cache
+E:\Visual Studio projects\DSManager\DSManager\DSManager\obj\Release\DSManager.DSManager.resources
+E:\Visual Studio projects\DSManager\DSManager\DSManager\obj\Release\DSManager.Properties.Resources.resources
+E:\Visual Studio projects\DSManager\DSManager\DSManager\obj\Release\DSManager.csproj.GenerateResource.Cache
