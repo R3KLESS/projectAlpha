@@ -54,7 +54,7 @@ namespace DSManager
                     case "lobby":
 
                         // start the lobby executable
-                        Process.Start(@"E:\Unreal Projects\packagedProjects\WindowsNoEditor\alpha\\Binaries\Win64\lobby.lnk");
+                        Process.Start(@"D:\Unreal\Projects\Packaged Projects\WindowsNoEditor\alpha\Binaries\Win64\lobby.lnk");
 
                         // call the endlobby php script by changing the url
                         string post2 = "";

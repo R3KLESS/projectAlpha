@@ -7,3 +7,12 @@ C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.Properties.Resour
 C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.csproj.GenerateResource.Cache
 C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.exe
 C:\Users\Pally\Desktop\DSManager\DSManager\obj\Debug\DSManager.pdb
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\bin\Debug\DSManager.exe.config
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\obj\Debug\DSManager.exe
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\obj\Debug\DSManager.pdb
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\bin\Debug\DSManager.exe
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\bin\Debug\DSManager.pdb
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\obj\Debug\DSManager.csprojResolveAssemblyReference.cache
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\obj\Debug\DSManager.DSManager.resources
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\obj\Debug\DSManager.Properties.Resources.resources
+D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\obj\Debug\DSManager.csproj.GenerateResource.Cache
