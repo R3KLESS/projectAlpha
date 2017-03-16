@@ -53,6 +53,7 @@ namespace DSManager
 
                     case "lobby":
 
+
                         // start the lobby executable
                         Process.Start(@"D:\Unreal\Projects\Packaged Projects\WindowsNoEditor\alpha\Binaries\Win64\lobby.lnk");
 
@@ -99,10 +100,36 @@ namespace DSManager
                 rc = sr.ReadToEnd();
             }
             else
+
             {
-                WebResponse response = request.GetResponse();
-                StreamReader sr = new StreamReader(response.GetResponseStream());
-                rc = sr.ReadToEnd();
+                try
+                {
+                    // Your Logic
+                    WebResponse response = request.GetResponse();
+                    StreamReader sr = new StreamReader(response.GetResponseStream());
+                    rc = sr.ReadToEnd();
+                }
+                catch (WebException ex)
+                {
+                    // call the DsmError php script by changing the url
+                    string post3 = "";
+                    string url3 = "http://enigmalabs.pe.hu/DsmError.php";
+                    string method3 = "POST";
+
+                    //call the process url function to set the error message
+                    ProcessURL(url3, method3, post3);
+
+
+
+                    Process.Start(@"D:\Unreal\Projects\Alpha_source\alpha Dedicated- DEVELOPMENT\DSManager\DSManager\DSManager\obj\Release\DSManager.exe");
+
+                   
+
+                    Application.Exit();
+
+                }
+              
+               
             }
             return rc;
         }
