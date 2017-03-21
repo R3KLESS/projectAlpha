@@ -4,12 +4,12 @@ include_once "connection.php";
 
 $mydata = json_decode(file_get_contents('php://input'));
 
-$accountname = $mydata ->accountname; 
-$accountpassword = $mydata ->accountpassword; 
-$accountemail = $mydata ->accountemail;
-$accountuniqueID = $mydata ->accountuniqueID;
-$accountsecurityquestion = $mydata ->accountsecurityquestion;
-$accountsecurityanswer = $mydata ->accountsecurityanswer;
+$accountname = $mydata -> accountname; 
+$accountpassword = $mydata -> accountpassword; 
+$accountemail = $mydata -> accountemail;
+$accountuniqueID = $mydata -> accountuniqueID;
+$accountsecurityquestion = $mydata -> accountsecurityquestion;
+$accountsecurityanswer = $mydata -> accountsecurityanswer;
 $accountisregistered = "Not Registered";  
 
 if ($stmt = $conn->prepare("SELECT * FROM users WHERE email = ? ")) //check if the email has already been used to register
@@ -36,14 +36,27 @@ if ($stmt = $conn->prepare("SELECT * FROM users WHERE email = ? ")) //check if t
                             $hash = password_hash($accountpassword, PASSWORD_DEFAULT); //using cool new PHP 5.5 encryption
 
                             $stmt = $conn->prepare("INSERT INTO users VALUES (NULL, ?, ?, ?, ?, ?, ?, ?)");
-   
+    
                             $stmt->bind_param("sssssss", $accountname, $accountemail, $accountsecurityquestion, $accountsecurityanswer, $accountisregistered, $accountuniqueID, $hash );
    
                             $stmt->execute();
    
                             $stmt->close();
-   
-                            echo json_encode(array('status'=>'OK' ));
+							
+							$to      = "$accountemail";
+							$subject = 'Account Activation';
+							$message = 'Thankyou for registering for the MOBA kit' ."\r\n" .'please enter this unique account ID' ."  " ."$accountuniqueID". "\r\n". 'to activate your account';
+							$headers = 'From: testEmail@MOBAKIT.com' . "\r\n" .
+							'Reply-To: dj-teknike@outlook.com' . "\r\n" .
+							'X-Mailer: PHP/' . phpversion();
+
+							if (mail($to, $subject, $message, $headers))
+							{
+							echo json_encode(array('status'=>'OK' ));
+							}
+							else
+					
+							echo json_encode(array('status'=>'Error' ));
 
                             }
             }

@@ -1,8 +1,9 @@
 <?php
 
 $uniqueID =1;
+$testEmail = 'dj-teknike@outlook.com';
 
-$to      = 'dj-teknike@outlook.com';
+$to      = "$testEmail";
 $subject = 'Account Activation';
 $message = 'Thankyou for registering for the MOBA kit' ."\r\n" .'please enter this unique account ID' ."  " ."$uniqueID". "\r\n". 'to activate your account';
 $headers = 'From: testEmail@MOBAKIT.com' . "\r\n" .
