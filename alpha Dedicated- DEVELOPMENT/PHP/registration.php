@@ -6,7 +6,11 @@ $mydata = json_decode(file_get_contents('php://input'));
 
 $accountname = $mydata ->accountname; 
 $accountpassword = $mydata ->accountpassword; 
-$accountemail = $mydata ->accountemail; 
+$accountemail = $mydata ->accountemail;
+$accountuniqueID = $mydata ->accountuniqueID;
+$accountsecurityquestion = $mydata ->accountsecurityquestion;
+$accountsecurityanswer = $mydata ->accountsecurityanswer;
+$accountisregistered = "Not Registered";  
 
 if ($stmt = $conn->prepare("SELECT * FROM users WHERE email = ? ")) //check if the email has already been used to register
 {
@@ -31,9 +35,9 @@ if ($stmt = $conn->prepare("SELECT * FROM users WHERE email = ? ")) //check if t
 
                             $hash = password_hash($accountpassword, PASSWORD_DEFAULT); //using cool new PHP 5.5 encryption
 
-                            $stmt = $conn->prepare("INSERT INTO users VALUES (NULL, ?, ?, ?)");
+                            $stmt = $conn->prepare("INSERT INTO users VALUES (NULL, ?, ?, ?, ?, ?, ?, ?)");
    
-                            $stmt->bind_param("sss", $accountname, $hash, $accountemail);
+                            $stmt->bind_param("sssssss", $accountname, $accountemail, $accountsecurityquestion, $accountsecurityanswer, $accountisregistered, $accountuniqueID, $hash );
    
                             $stmt->execute();
    

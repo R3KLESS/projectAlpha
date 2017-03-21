@@ -4,7 +4,6 @@ $servername = 'localhost';
 $username = 'u775822918_user';  
 $password = 'Lexilexi1';
 $dbname = 'u775822918_test';
-
 // Create connection
 $link = new mysqli ($servername, $username, $password, $dbname);
 
@@ -15,8 +14,8 @@ if ($mysqli->connect_error)
 	die;
 } 
 
- 
-$query = "SELECT requestType FROM lobbyRequest"; 
+// select All ServerNames && ServerStatus from the statusCheck database and sort them by ID order 
+$query = "SELECT ServerName, ServerStatus FROM statusCheck ORDER by ID";  
 
 if ($stmt = mysqli_prepare($link,$query))
 {
@@ -26,14 +25,23 @@ if ($stmt = mysqli_prepare($link,$query))
 	
 	//bind variables
 	
-	mysqli_stmt_bind_result($stmt, $RequestType);
+	mysqli_stmt_bind_result($stmt, $ServerName, $ServerStatus);
 	
 	//fetch values
-	while(mysqli_stmt_fetch($stmt));
-	{
-	
-	echo $RequestType;
-	}
+
+
+	while (mysqli_stmt_fetch($stmt))
+		
+		{
+			echo json_encode(array('ServerName'=>$ServerName, 'ServerStatus'=>$ServerStatus));
+		}
 }
-	
+		
+  /* close statement */
+    mysqli_stmt_close($stmt);
+
+
+/* close connection */
+mysqli_close($link);
+		
 ?>

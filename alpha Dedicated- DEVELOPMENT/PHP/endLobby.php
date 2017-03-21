@@ -3,12 +3,14 @@
 include_once "connection.php"; 
 
 
+$sql = "UPDATE lobbyRequest SET requestType = 'waitingForRequest'";
 
-$query = "DELETE requestType FROM LobbyRequest";
+if ($conn->query($sql) === TRUE) {
+    echo "lobby request updated successfully";
+} else {
+    echo "Error deleting record: " . $conn->error;
+}
 
-$result = $conn->query($query);
-$row =$result->fetch_assoc();
 
-echo $row["requestType"];
 
 ?>

@@ -36,7 +36,7 @@ if ($stmt->fetch()) {
 	else echo  json_encode(array('status'=>'Login information is incorrect. Check your username and password.')); //wrong password
 	
 }
-else echo  json_encode(array('status'=>'Login information is incorrect. Check your username and password.')); //no such username
+else echo  json_encode(array('status'=>'Login information is incorrect. Or you need to register an account')); //no such username
 
 
 ?>
