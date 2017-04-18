@@ -5,7 +5,9 @@ using UnrealBuildTool;
 public class alpha : ModuleRules
 {
 	public alpha(TargetInfo Target)
-	{
+	{   
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay" });
-	}
+     
+    }
+    
 }
